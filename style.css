@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+
+:root{
+    /* ### Primary */
+
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+
+    /* ### Neutral */
+
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+body{
+    margin:0;
+    padding:0;
+    min-height: 100vh;  
+    font-family:"Bai Jamjuree",sans-serif;
+}
+button,
+p{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+p{
+    opacity:0.6;
+    line-height: 1.6;
+}
+h1,
+h2,
+h3{
+    font-weight: 600;
+    opacity: 0.8;
+}
+h1{
+    font-size: 4rem; 
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 2.4rem;
+}
+ul{
+    padding:0;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+}
+ul li{
+    font-size: 1.8rem;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    width:120rem;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.container-small{
+    width:70rem;
+    margin:auto;
+
+}.content-header{
+    padding-bottom: 10rem;
+}
+.center{
+    text-align: center;
+}
+.flex{
+    display: flex;
+    align-items: center;
+ 
+}
+header{
+    background: url(./images/bg-header-desktop.png)no-repeat bottom/cover;
+    padding:5rem 0;
+}
+.logo img{
+    width:10rem;
+}
+.footer-logo img{
+    width: 5rem;
+}
+.header-bottom h1{
+    margin: 0 0 1rem 0;
+}
+button{
+    margin-top: 4rem;
+    
+}
+.btn{
+    padding:1.5rem 3rem;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    outline: none;
+    
+}
+.btn-1{
+    margin-right: 1.5rem;
+    background-color: var(--Strong-Cyan);
+    box-shadow: 2px 2px 3px hsl(171, 66%, 35%);
+}
+.btn-2{
+    
+    background-color: var(--Light-Blue);
+    box-shadow: 2px 2px 3px hsl(233, 100%, 50%);
+}
+.btn-1:hover,
+.btn-2:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.middle-content{
+    padding-bottom: 5rem;
+}
+.image-content img{
+    margin-left: -20%;
+    max-width:800px;
+}
+.content{
+    padding-right: 10rem;
+}
+.content p{
+    font-size: 1.6rem;
+}
+.content div{
+    margin-bottom: 2rem;
+}
+.center-content{
+    margin:10rem auto 8rem;
+}
+.content-group{
+    gap:3rem;
+    padding:2rem 0 10rem;
+}
+.group-logos{
+    justify-content: space-between;
+    padding: 5rem 0 12rem;
+}
+footer{  
+    background-color: hsl(201, 11%, 96%);
+}
+.footer{
+    justify-content: space-between;
+    padding:2rem 0;
+    margin:10rem auto 0;
+}
+.column4{
+    align-self: flex-start;
+}
+.column2,
+.column3,
+.column4{
+    margin-left:-6rem;
+}
+.column2 ul,
+.column3 ul,
+.column4 ul{
+    opacity:0.8;
+
+}
+.column3,
+.column4{
+    margin-left: -15rem;
+}
+li{
+    line-height: 2;
+   
+}
+li:first-child{
+     margin-bottom: 1rem;
+}
+.column5 ul{
+    align-self: center;
+}
+.column5 li{
+    padding-left: 2rem;
+    
+}
+.column5 li:first-child{
+    margin:0;
+}
+li i{
+   font-size: 2.5rem;
+}
+li:hover{
+    color: var(--Strong-Cyan);
+    cursor: pointer;
+}
+@media(max-width:900px){
+    header{
+        background: url(./images/bg-header-mobile.png)no-repeat bottom top/cover;
+    }
+    .container{
+        padding:5rem 3rem 4rem;
+    }
+    .container-small{
+        width: 100%;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .btn,img{
+        width: 100%;
+    }
+    .image-content img{
+        margin:0;
+    }
+    .content{
+        padding:5rem 0 0;
+        text-align: center;
+    }
+    .content div{
+        margin-bottom: 5rem;
+    }
+    .content-group img{
+        width: 50px;
+    }
+    .group-logos img{
+        margin-bottom:6rem;
+    }
+    .footer{
+        width:100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .column{
+        margin: 0;
+    }
+    .column1{
+        padding-bottom: 4rem;
+    }
+    .column4{
+        align-self: center;
+    }
+    ul.flex{
+        flex-direction: row;
+        padding:4rem 0;
+    }
+    ul.flex li{
+        padding: 0 1.5rem ;
+    }
+}
